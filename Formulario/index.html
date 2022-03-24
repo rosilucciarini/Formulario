@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+    <title>Formulario de registro - Mi web</title>
+ <style>
+     #titulo {
+         color: #faf8f6;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         height: 40px;
+         width: 700px;
+         margin: 10px 10px;
+         padding: 10px;
+         border: 3px solid #043366 ;
+     
+     }
+     .contenedor {
+      height: 280px;
+         width: 700px;
+         margin: 10px 10px;
+         padding: 10px;
+         border: 3px solid #043366 ;
+        
+     }
+
+
+     .destacado {
+         font-weight: bold;
+         color: #f8f7f6;
+     }
+     .check {
+         font-weight: 700;
+         color: rgb(244, 244, 252);
+     }
+
+ body {
+    background-color: black;
+
+ }
+ .boton {
+    color: #043366;
+    background: white;
+    border: 2px solid #043366;
+    border-radius: 6px;
+ 
+ }
+ .boton:hover {
+    background-color: #043366;
+    color: white;
+ }
+
+ </style>
+
+ 
+</head>
+<body>
+
+   <h1 id="titulo">
+        Formulario de registro 
+      
+    </h1>
+
+    <form class="contenedor" action="" method="get">
+       	<p class="destacado">
+            Nombre: <input type="text" name="nombre" maxlength="50" />
+       	</p>
+       	<p class="destacado"> 
+           Apellidos: <input type="text" name="apellidos" maxlength="50" />
+       	</p>
+	<p class="destacado">
+	   Sexo: <input type="radio" name="sexo" value="h" /> hombre <input type="radio" name="sexo" value="m" /> mujer
+	</p>
+	<p class="destacado">
+	   Correo: <input type="text" name="correo" maxlength="100" />
+	</p>
+	<p class="check">
+	   <input type="checkbox" name="info" checked="checked" /> Deseo recibir información sobre novedades y ofertas
+	</p>
+	<p class="check">
+	   <input type="checkbox" name="condiciones" /> Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos
+	</p>
+	<p>
+	   <input class="boton" type="submit" value="Enviar" />
+	</p>
+ 
+    </form>
+
+</body>
+</html>
